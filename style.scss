@@ -1,0 +1,73 @@
+$main-color: #FFCDC9;
+
+.navbar {
+    background-color: $main-color;
+
+}
+
+.List-1 {
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: -20px;
+    z-index: -1;
+
+}
+
+.display {
+    background: white;
+    border-radius: 60px;
+    height: 200px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+    gap: 8px;
+    flex-direction: column;
+
+
+
+
+    .btn1 {
+        height: 110px;
+        width: 110px;
+        background-color: rgb(250, 250, 250);
+        margin: 24px;
+        position: relative;
+        border-radius: 100px;
+        color: rgb(175, 175, 175);
+        border: none;
+
+
+        transition: 130ms;
+
+        &:hover {
+            box-shadow: 0 0 5px gray;
+
+            transform: translateY(-3px);
+        }
+
+        ion-icon {
+            font-size: 50px;
+        }
+    }
+}
+
+.display-text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    .text {
+        font-size: 18px;
+        margin: 80px;
+        margin-top: -10px;
+        width: 110px;
+        
+    }
+}
+
+.mText {
+    color: rgb(175, 175, 175);
+}
