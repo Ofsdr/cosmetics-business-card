@@ -1,5 +1,6 @@
 .navbar {
   background-color: #FFCDC9;
+  font-family: "Lato", sans-serif;
 }
 
 .List-1 {
@@ -62,14 +63,30 @@
   font-size: 18px;
   margin-top: -10px;
   width: 1100px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .mText {
   color: rgb(175, 175, 175);
   margin-bottom: 70px;
+  font-family: "Lato", sans-serif;
 }
 
-.text1 .mImage {
-  height: 400px;
-  width: 400px;
+.text1 {
+  margin-bottom: 200px;
+}
+.text1 .mText1 {
+  margin-top: 40px;
+  text-align: left;
+  text-wrap: wrap;
+}
+.text1 .mText1 h1 {
+  font-family: "Lato", sans-serif;
+}
+.text1 img {
+  height: 463px;
+  width: 463px;
+}
+.text1 button {
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */
