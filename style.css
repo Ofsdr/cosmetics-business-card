@@ -127,6 +127,59 @@
   border: none;
   margin: 20px;
 }
+.productList .card:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.productList .card .someP {
+  opacity: 0;
+  transition: all 0.25s ease;
+  position: absolute;
+  left: 0;
+  right: 0;
+  flex-direction: row;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(100%);
+          backdrop-filter: blur(100%);
+  margin-top: -48px;
+  transform: translateY(10px);
+  height: 50px;
+  border-radius: 0 0 16px 16px;
+  background-color: rgb(218, 216, 216);
+}
+.productList .card .someP.show {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+.productList .card .someP ion-icon {
+  transform: translateY(12px);
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: black;
+}
 .productList .card img {
   border-radius: 16px;
+}
+.productList .card .card-body {
+  text-align: start;
+  z-index: 11;
+}
+.productList .card .card-body .st {
+  opacity: 0.6;
+  margin-bottom: 0;
+  font-size: 15.5px;
+}
+.productList .card .card-body .st1 {
+  font-size: 19px;
+  font-weight: 500;
+}
+.productList .card .card-body img {
+  margin-top: -10px;
+  height: 27px;
+}
+.productList .card .card-body .card-text {
+  font-weight: 650;
+  font-size: 19px;
+  margin-bottom: 5px;
 }/*# sourceMappingURL=style.css.map */

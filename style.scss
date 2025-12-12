@@ -96,10 +96,12 @@ $main-color: #FFCDC9;
 .text1 {
 
     margin: 50px 50px 200px 50px;
+
     .mText1 {
         margin-top: 20px;
         text-align: left;
         text-wrap: wrap;
+
         h1 {
             font-family: "Lato", sans-serif;
         }
@@ -126,15 +128,18 @@ $main-color: #FFCDC9;
         font-size: 18px;
         color: #5e6669;
         background-color: white;
+
         &:hover {
             box-shadow: 0 0 2px #5e6669;
         }
+
         ion-icon {
 
             font-size: 20px;
         }
     }
 }
+
 .displaySup {
     display: flex;
 
@@ -143,15 +148,88 @@ $main-color: #FFCDC9;
         height: 100%;
     }
 }
+
 .productList {
     display: flex;
     justify-content: baseline;
     margin-bottom: 200px;
+
     .card {
         border: none;
         margin: 20px;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+
+        .someP {
+            opacity: 0;
+            transition: all .25s ease;
+            position: absolute;
+            left: 0;
+            right: 0;
+        
+            flex-direction: row;
+            justify-content: center;
+            
+            backdrop-filter: blur(100%);
+            margin-top: -48px;
+            transform: translateY(10px);
+            height: 50px;
+            
+            border-radius: 0 0 16px 16px;
+            background-color: rgb(218, 216, 216);
+
+            &.show {
+                opacity: 1;
+                transform: translateY(-2px);
+            }
+
+            ion-icon {
+                transform: translateY(12px);
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+                color: black;
+            }
+
+        }
+
         img {
             border-radius: 16px;
+        }
+
+        .card-body {
+            text-align: start;
+            z-index: 11;
+
+            .st {
+                opacity: 0.6;
+                margin-bottom: 0;
+                font-size: 15.5px;
+            }
+
+            .st1 {
+                font-size: 19px;
+                font-weight: 500;
+
+            }
+
+            img {
+                margin-top: -10px;
+                height: 27px;
+
+            }
+
+            .card-text {
+
+                font-weight: 650;
+                font-size: 19px;
+                margin-bottom: 5px;
+
+
+            }
         }
     }
 }
