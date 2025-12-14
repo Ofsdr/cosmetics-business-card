@@ -126,37 +126,43 @@
 .productList .card {
   border: none;
   margin: 20px;
+  position: relative;
 }
 .productList .card:hover {
   cursor: pointer;
   opacity: 0.7;
 }
+.productList .card .img-wrap {
+  position: relative;
+  overflow: hidden;
+}
 .productList .card .someP {
-  opacity: 0;
-  transition: all 0.25s ease;
   position: absolute;
+  bottom: 0;
   left: 0;
   right: 0;
-  flex-direction: row;
+  height: 55px;
+  display: flex;
   justify-content: center;
-  -webkit-backdrop-filter: blur(100%);
-          backdrop-filter: blur(100%);
-  margin-top: -48px;
-  transform: translateY(10px);
-  height: 50px;
-  border-radius: 0 0 16px 16px;
+  align-items: center;
   background-color: rgb(218, 216, 216);
-}
-.productList .card .someP.show {
-  opacity: 1;
-  transform: translateY(-2px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 0 0 16px 16px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: 0.25s ease;
 }
 .productList .card .someP ion-icon {
-  transform: translateY(12px);
   justify-content: center;
   align-items: center;
   font-size: 30px;
   color: black;
+}
+.productList .card:hover .someP {
+  opacity: 1;
+  transform: translateY(0);
+  border-radius: 0 0 16px 16px;
 }
 .productList .card img {
   border-radius: 16px;

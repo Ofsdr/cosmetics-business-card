@@ -157,43 +157,52 @@ $main-color: #FFCDC9;
     .card {
         border: none;
         margin: 20px;
+        position: relative;
 
         &:hover {
             cursor: pointer;
             opacity: 0.7;
         }
 
+        .img-wrap {
+            position: relative;
+            overflow: hidden;
+        }
+
         .someP {
-            opacity: 0;
-            transition: all .25s ease;
             position: absolute;
+            bottom: 0;
             left: 0;
             right: 0;
-        
-            flex-direction: row;
-            justify-content: center;
-            
-            backdrop-filter: blur(100%);
-            margin-top: -48px;
-            transform: translateY(10px);
-            height: 50px;
-            
-            border-radius: 0 0 16px 16px;
-            background-color: rgb(218, 216, 216);
 
-            &.show {
-                opacity: 1;
-                transform: translateY(-2px);
-            }
+            height: 55px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: rgb(218, 216, 216);
+            backdrop-filter: blur(10px);
+            border-radius: 0 0 16px 16px;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: 0.25s ease;
+
+            
 
             ion-icon {
-                transform: translateY(12px);
+                
                 justify-content: center;
                 align-items: center;
                 font-size: 30px;
                 color: black;
             }
 
+        }
+        &:hover .someP {
+        opacity: 1;
+        transform: translateY(0);
+        border-radius: 0 0 16px 16px;
         }
 
         img {
