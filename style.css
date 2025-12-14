@@ -188,4 +188,24 @@
   font-weight: 650;
   font-size: 19px;
   margin-bottom: 5px;
+}
+
+.wrapper {
+  max-height: 500px;
+  border: 1px solid #ddd;
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: 0;
+  gap: 5px;
+  margin-top: 200px;
+  background-color: rgb(250, 250, 250);
+}
+.wrapper .item {
+  margin-top: 100px;
+  min-width: 250px;
+  height: 500px;
+  line-height: 110px;
+  text-align: center;
+  background-color: #5e6669;
 }/*# sourceMappingURL=style.css.map */
