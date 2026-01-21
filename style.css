@@ -1,3 +1,12 @@
+.gray-background {
+  background-color: gray;
+  color: white;
+}
+.gray-background .display {
+  background-color: gray;
+  color: white;
+}
+
 .navbar {
   background-color: #FFCDC9;
   font-family: "Lato", sans-serif;
