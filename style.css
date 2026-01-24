@@ -236,6 +236,10 @@
   margin-bottom: 5px;
 }
 
+.md-text {
+  font-family: "Acme", sans-serif;
+}
+
 .wrapper {
   max-height: 700px;
   display: flex;
@@ -251,6 +255,10 @@
 }
 .wrapper .item .card img {
   height: 400px;
+}
+
+.text-13 {
+  font-family: "Acme", sans-serif;
 }
 
 .block {

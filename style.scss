@@ -306,7 +306,9 @@ $main-color: #FFCDC9;
         }
     }
 }
-
+.md-text {
+    font-family: "Acme", sans-serif;
+}
 .wrapper {
     max-height: 700px;
     display: flex;
@@ -331,7 +333,9 @@ $main-color: #FFCDC9;
         }
     }
 }
-
+.text-13 {
+    font-family: "Acme", sans-serif;
+}
 
 .block {
     height: 300px;
